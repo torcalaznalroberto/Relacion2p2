@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+    <html>
+        <body>
+            <h1>Rellena tu CV</h1>
+            <form action="/datoscv.php" method="post" id="formulario3" name="formulario3">
+                <fieldset>
+                    <legend>Datos personales</legend>
+                    <label for="provincia">Provincia</label><br>
+                    <select name="provincia" id="provincia">
+                        <option value="none" disabled selected>-seleciona-</option>
+                        <option value="sevilla">Sevilla</option>
+                        <option value="cadiz">Cadiz</option>
+                        <option value="cordoba">Cordoba</option>
+                        <option value="huelva">Huelva</option>
+                        <option value="jaen">Jaen</option>
+                        <option value="malaga">Malaga</option>
+                        <option value="almeria">Almeria</option>
+                        <option value="granada">Granada</option>
+                    </select><br>
+                    <label for="fnac">Fecha de nacimiento</label><br>
+                    <div id="fnac" class="input-group"></div>
+                    <input type="text" maxlength="2" size="2" id="dia" name="dia">
+                    <span class="input-group-addon">de</span>
+                    <select name="mes" id="mes">
+                        <option value="1">Enero</option>
+                        <option value="2">Febrero</option>
+                        <option value="3">Marzo</option>
+                        <option value="4">Abril</option>
+                        <option value="5">Mayo</option>
+                        <option value="6">Junio</option>
+                        <option value="7">Julio</option>
+                        <option value="8">Agosto</option>
+                        <option value="9">Septiembre</option>
+                        <option value="10">Octubre</option>
+                        <option value="11">Noviembre</option>
+                        <option value="12">Diciembre</option>
+                    </select>
+                    <span class="input-group-addon">de</span>
+                    <input type="text" maxlength="4" size="4" name="año" id="año"><br>
+                </div>
+                    <label for="temas">Temas de interes</label><br>
+                    <select id="temas" name="temas" size="4">
+                        <option value="adm">Administracion de base de datos</option>
+                        <option value="analpro">Analisis y programacion</option>
+                        <option value="arqt">Arquitectura</option>
+                        <option value="cali">Calidad</option>
+                        <option value="bio">Biologia</option>
+                        <option value="ade">Administracion de empresa</option>
+                    </select>
+                </fieldset>
+            </form>
+        </body>
+    </html>
